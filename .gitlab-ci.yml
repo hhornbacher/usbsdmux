@@ -13,6 +13,14 @@ test:
 
 build:
   extends: .rust_build
+  after_script:
+    - export BUILD_DIR="debug"
+    - if [ "${CI_COMMIT_BRANCH}" == "main" ] ; then export BUILD_DIR="release" ; fi
+    - cp target/${BUILD_DIR}/examples/usbsdmux ./usbsdmux
+  artifacts:
+    expire_in: 16 weeks
+    paths:
+      - usbsdmux
 
 publish:
   extends: .rust_publish
