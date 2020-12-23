@@ -1,0 +1,10 @@
+[package]
+authors = ["Harry Hornbacher <dev@harry-hornbacher.de>"]
+edition = "2018"
+name = "usbsdmux"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+usb2642-i2c = "0.1"

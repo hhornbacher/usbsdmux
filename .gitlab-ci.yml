@@ -1,0 +1,18 @@
+include:
+  - project: "cicd/templates"
+    ref: master
+    file: "/rust.yml"
+
+stages:
+  - test
+  - build
+  - publish
+
+test:
+  extends: .rust_test
+
+build:
+  extends: .rust_build
+
+publish:
+  extends: .rust_publish
