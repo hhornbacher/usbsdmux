@@ -9,7 +9,7 @@ edition = "2018"
 exclude = [
   "cargo/*",
 ]
-keywords = ["usb2642", "i2c", "linux"]
+keywords = ["usbsdmux", "i2c", "linux"]
 license = "MIT"
 name = "usbsdmux"
 readme = "README.md"
