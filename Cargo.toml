@@ -1,7 +1,19 @@
 [package]
 authors = ["Harry Hornbacher <dev@harry-hornbacher.de>"]
+categories = ["embedded", "hardware-support", "os"]
+description = """
+Program and library to control the USB-SD-Mux device
+"""
+documentation = "https://docs.rs/usbsdmux"
 edition = "2018"
+exclude = [
+  "cargo/*",
+]
+keywords = ["usb2642", "i2c", "linux"]
+license = "MIT"
 name = "usbsdmux"
+readme = "README.md"
+repository = "https://github.com/hhornbacher/usbsdmux"
 version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
